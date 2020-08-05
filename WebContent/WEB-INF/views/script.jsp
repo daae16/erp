@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-보자
+<script>
+var obj = document.querySelector('#test');
+alert(obj.innerText);
+</script>
+
+<div id="test">나나</div>
 </body>
 </html>
