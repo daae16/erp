@@ -65,7 +65,7 @@ color : ##DFD25B;
 selected 
 </c:if>
 ">전체</div>
-<c:forEach items="${sidoList}" var="sido" varStatus="idx">
+<c:forEach items="${sidoList}" var="sido" varStatus="idx" >
 	<div class="sido
 	<c:if test="${sido==param.sido}"> 
 selected 
