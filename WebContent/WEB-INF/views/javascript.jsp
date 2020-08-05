@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-보자
+<script>
+
+</script>
 </body>
 </html>
