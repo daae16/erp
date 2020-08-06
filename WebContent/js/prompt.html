@@ -5,14 +5,33 @@
 <title>Insert title here</title>
 </head>
 <body>
-<script>
-function qa(){
-	var isHobby = confirm('너 취미 있니?');
-	if(isHobby){
-		var hobbies = prompt('취미가 뭡니까?');
-		document.write('오 당신의 취미는'+ hobbies + '이군요~');
-	}
-}
-</script>
-<button onclick="qa()">질문하기</button>
+   <script>
+      function three() {
+         var max = document.querySelector('#maxnum').value;
+         var str = "<table border = '1'>";
+         for (i = 1; i <= max; i++) {
+            if (i % 10 == 1) {
+               str += "<tr>";
+            }
+            if (i%10==3||i%10==6||i%10==9) {
+               str += '<td>' + '짝' + '</td>';
+            } else {
+               str += '<td>' + i + '</td>';
+            }
+            if (i % 10 == 0) {
+               str += "</tr>";
+            }
+         }
+         str += "</table>";
+         document.querySelector('#rDiv').innerHTML = str;
+      }
+   </script>
+   <input type="number" id="maxnum">
+   <button onclick="three()">삼육구</button>
+   <div id="rDiv"></div>
+
+
+
+
 </body>
+</html>

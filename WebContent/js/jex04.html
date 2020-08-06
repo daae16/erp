@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="/js/jquery-3.5.1.js"></script>
+<style>
+div{
+  width:150px;
+  height:150ps;
+  background-color:black;
+  color:white;
+  position:absolute;
+}
+</style>
+</head>
+<body>
+<button>움직여라!</button>
+
+<div id="rDiv">무빙박스(이승기)</div>
+
+<script>
+$('button').click(function(){
+	$('#rDiv').animate({left:'400px'});
+})
+</script>
+</body>
+</html>
